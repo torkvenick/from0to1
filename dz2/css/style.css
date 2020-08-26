@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 900px;
+}
+
+.block {
+    line-height: 24px;
+    display: block;
+    width: 220px;
+    height: 75px;
+    text-align: center;
+    padding: 25px 0;
+    position: relative;
+    border: 1px solid #000;
+}
+
+.block-1::before {
+    content: 'Далеко-далеко';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.block-1::after {
+    content: 'словесными';
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+}
+
+.block-2 {
+    margin-left: 190px;
+}
+
+.block-2::before {
+    content: 'горами';
+    position: absolute;
+    left: 30px;
+    top: 0;
+}
+
+.block-2::after {
+    content: 'гласных';
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+}
+
+.block-3 {
+    margin-left: 390px;
+}
+
+.block-3::before {
+    content: 'и согласных';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.block-3::after {
+    content: 'рыбные';
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+}
+
+.block-4 {
+    
+}
+
+
+
+
+
+
+

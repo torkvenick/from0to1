@@ -1,0 +1,35 @@
+body{
+    background-color: #fcc23f;
+    text-align: center;
+}
+
+.container{
+    width: 600px;
+    display: block;
+    margin: 0 auto;
+}
+
+.container-2{
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(38, 125, 54)
+}
+
+h3{
+    text-align: right;
+}
+
+p{
+    font-style: italic;
+    font-weight: 700;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.text{
+    text-align: center;
+}

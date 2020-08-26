@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    border: 5px solid #000;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 100px;  
+    transition: all 2s;
+}
+
+.box-1 {
+    width: 200px;
+    background-color: #ff0000;
+    z-index: 6;
+}
+
+.box-1:hover {
+    background-color: #ffff00;
+}
+
+.box-2 {
+    width: 300px;
+    background-color: #ffff00;
+    top: 50px;
+    z-index: 5;
+}
+
+.box-2:hover {
+    background-color: #008100;
+}
+
+.box-3 {
+    width: 400px;
+    background-color: #008100;
+    top: 100px;
+    z-index: 4;
+}
+
+.box-3:hover {
+    background-color: #0000ff;
+}
+
+.box-4 {
+    width: 500px;
+    background-color: #0000ff;
+    top: 150px;
+    z-index: 3;
+}
+
+.box-4:hover {
+    background-color: #ffc1cc;
+}
+
+.box-5 {
+    width: 600px;
+    background-color: #ffc1cc;
+    top: 200px;
+    z-index: 2;
+}
+
+.box-5:hover {
+    background-color: #818181;
+}
+
+.box-6 {
+    width: 700px;
+    background-color: #818181;
+    top: 250px;
+    z-index: 1;
+}
+
+.box-6:hover {
+    background-color: #ff0000;
+}
+
+/* Ниже попробовал через псевдоклассы. index2.html */
+
+.second-option {
+    position: relative;
+    list-style-type: none;    
+}
+
+.option-box {
+    text-decoration: none;
+    border: 5px solid #000;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 100px; 
+    transition: all 2s;
+}
+
+.option-box:first-child {
+    width: 200px;
+    background-color: #ff0000;
+    z-index: 6;
+}
+
+.option-box:first-child:hover {
+    background-color: #ffff00;
+}
+
+.option-box:nth-child(2) {
+    width: 300px;
+    background-color: #ffff00;
+    top: 50px;
+    z-index: 5;
+}
+
+.option-box:nth-child(2):hover {
+    background-color: #008100;
+}
+
+.option-box:nth-child(3) {
+    width: 400px;
+    background-color: #008100;
+    top: 100px;
+    z-index: 4;
+}
+
+.option-box:nth-child(3):hover {
+    background-color: #0000ff;
+}
+
+.option-box:nth-child(4) {
+    width: 500px;
+    background-color: #0000ff;
+    top: 150px;
+    z-index: 3;
+}
+
+.option-box:nth-child(4):hover {
+    background-color: #ffc1cc;
+}
+
+.option-box:nth-child(5) {
+    width: 600px;
+    background-color: #ffc1cc;
+    top: 200px;
+    z-index: 2;
+}
+
+.option-box:nth-child(5):hover {
+    background-color: #818181;
+}
+
+.option-box:last-child {
+    width: 700px;
+    background-color: #818181;
+    top: 250px;
+    z-index: 1;
+}
+
+.option-box:last-child:hover {
+    background-color: #ff0000;
+}
+/* для index2.html */
