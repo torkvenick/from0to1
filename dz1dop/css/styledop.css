@@ -1,4 +1,4 @@
-* {
+html {
     box-sizing: border-box;
 }
 
@@ -9,119 +9,84 @@
 }
 
 body {
-    margin: 0 auto;
-    background: #1976D5;
+    background-color: #1976D5;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
-    max-width: 1280px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
 }
 
 .header,
 .nav,
-.footer {
-    margin: 0 auto;
-    max-width: 1000px;
+.aside,
+.main {
+    margin-bottom: 20px;
 }
 
 .block-title {
     color: #FFFFFF;
-    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     line-height: 82px;
     text-align: center;
     font-size: 70px;
-    box-sizing: border-box;
 }
 
 .header {
-    background: #C1C1C1;
+    background-color: #C1C1C1;
     line-height: 100%;
     padding: 40px 0;
-    max-height: 150px;
-    margin-bottom: 20px;
 }
 
 .nav {
-    background: #EB1E63;
-    max-height: 75px;
+    background-color: #EB1E63;
     line-height: 100%;
     padding: 3px 0;
-    margin-bottom: 20px;
-}
-
-.main-block {
-    max-width: 1000px;
-    padding: 0 140px;
-    margin: 20px auto;
-    display: flex;
-    justify-content: space-between;
 }
 
 .aside {
     width: 360px;
-    height: 600px;
-    background: #3A3E47;
-    left: 140px;
+    display: inline-block;
+    margin-right: 16px;
+    vertical-align: top;
+    background-color: #3A3E47;
 }
 
 .figure {
-    position: absolute;
-    width: 320px;
-    height: 480px;
-    background: #637B8B;
-    margin: 0 20px;
+    background-color: #637B8B;
+    display: inline-block;
 }
 
 .image {
-    width: 280px;
-    height: 350px;
-    background: #85D32C;
-    margin: 0 20px;
+    background-color: #85D32C;
 }
 
 .main {
     width: 620px;
-    height: 600px;
-    background: #6BB01A;
+    display: inline-block;
+    background-color: #6BB01A;
 }
 
 .section {
-    width: 580px;
-    margin: 0 20px;
-    height: 235px; 
-    background: #FFC10A;
-    padding-top: 88px; 
-    position: relative;  
+    background-color: #FFC10A;
 }
 
 .button {
-    width: 200px;
-    height: 50px;
-    background: #4176FF;
+    background-color: #4176FF;
     font-weight: bold;
     font-size: 32px;
     line-height: 37px;
     text-transform: uppercase;
     border: none;
-
-    position: absolute;
-    bottom: 15px;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
 }
 
 .article {
-    width: 580px;
-    height: 235px;
-    background: #FF800A;
-    padding-top: 88px;
-    margin: 20px;
+    background-color: #FF800A;
 }
 
 .footer {
-    width: 1000px;
-    height: 150px;
-    background: #000000;
+    background-color: #000000;
     padding-top: 46px;
 }

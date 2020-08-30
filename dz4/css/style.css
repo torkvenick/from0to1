@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Bebas';
+    src: url(../fonts/Bebas.woff2) format('woff2'),
+         url(../fonts/Bebas.woff) format('woff'),
+         url(../fonts/Bebas.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Bebas', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header {
+    background-color: #fbfbfb;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    max-height: 80px;
+    align-items: center;
+}
+
+.logo-link__img {
+    padding: 22px 0;
+}
+
+.menu__list {
+    list-style: none;
+}
+
+.menu__list-item {
+    display: inline-block; 
+    text-transform: uppercase;   
+}
+
+.menu__list-item + .menu__list-item {
+    margin-left: 27px;
+}
+
+.list-item__link {
+    color: #b9b9b9;
+    transition: all .3s;    
+    cursor: pointer;
+}
+
+.list-item__link:hover {
+    color: #e8663c;
+}
