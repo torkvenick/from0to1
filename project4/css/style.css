@@ -8,6 +8,10 @@ html {
     box-sizing: inherit;
 }
 
+body {
+    font-family: 'Lato', sans-serif;
+}
+
 a {
     color:#000;
     display: inline-block;
@@ -45,7 +49,6 @@ li {
 .header__logo a {
     color: #2aacc8;
     font-size: 50px;
-    font-family: 'Lato', sans-serif;
     font-weight: 400;
 }   
 
@@ -149,6 +152,7 @@ li {
     overflow: visible;
     opacity: 1;
     transition: all .3s;
+    z-index: 6;
 }
 
 .header__drop-down.drop-down:hover > a {
@@ -160,7 +164,7 @@ li {
 
 .slider {
     background-color: #81e4ed;
-    padding: 20px 0 40px;
+    padding: 20px 0 10px; /* а было 40px */
 }
 
 .slider__item {
@@ -172,5 +176,31 @@ li {
 }
 
 .slider__item-title {
-    
+    font-size: 50px;
+    color: #fff;
+    width: 300px;
+    margin-left: 60px;
+    font-weight: 700;
+    padding-top: 90px; /* 90, чтобы можно было что-то добавить или убавить */
+}
+
+.slick-dots li button {
+    width: 14px;
+    height: 14px;
+    background-color: rgba(98,98,98,.5);
+    border-radius: 50%;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #fff;
+}
+
+.slick-dots li button:before {
+    display: none;
+}
+
+.slick-dots li {
+    margin: 0 9px;
+    width: auto;
+    height: auto;
 }
