@@ -162,6 +162,8 @@ li {
     transition: all .3s;
 }
 
+    /* СЛАЙДЕР */
+
 .slider {
     background-color: #81e4ed;
     padding: 20px 0 10px; /* а было 40px */
@@ -204,3 +206,5 @@ li {
     width: auto;
     height: auto;
 }
+
+    /* СЛАЙДЕР */
