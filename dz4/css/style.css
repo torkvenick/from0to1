@@ -40,34 +40,37 @@ a {
 .header__inner {
     display: flex;
     justify-content: space-between;
-    min-height: 80px;
+    min-height: 80px; /* чтобы контент не растягивал */
     align-items: center;
 }
 
-.logo-link__img {
+.header__logo__img {
     padding: 22px 0;
 }
 
-.menu__list {
+.menu {
     list-style: none;
 }
 
-.menu__list-item {
+.menu__item {
     display: inline-block;
     text-transform: uppercase;
 }
 
-.menu__list-item+.menu__list-item {
+.menu__item+.menu__item {
     margin-left: 27px;
 }
 
-.list-item__link {
+.menu__link {
     color: #b9b9b9;
-    transition: all .3s;
-    cursor: pointer;
+    transition: color 0.3s;
 }
 
-.list-item__link:hover {
+/* .menu__link--active {
+    color: #e8663c;
+} */
+
+.menu__link:hover {
     color: #e8663c;
 }
 

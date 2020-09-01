@@ -23,26 +23,28 @@ html {
 .container {
     max-width: 1200px;
     margin: 0 auto;  
-    padding: 99px 90px 61px 93px;
+    padding: 99px 90px 56px 93px;
 }
 
 .main__inner {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 15px;
 }
 
-.main__block {
+.block {
+    position: relative;
     width: 500px;
     height: 500px;
-    position: relative;
+    margin-bottom: 15px;
 }
 
-.main__block-blue {
+.block--blue {
     background-color: #3BBCE3;
 }
 
-.main__block-content {
+.block__item {
     width: 250px;
     height: 250px;
     text-align: center;
@@ -56,67 +58,67 @@ html {
     color: #FFFFFF;
 }
 
-.main__block-content::before {
+.block__item::before {
     content: "";
     width: 250px;
     height: 250px;
     border: 30px solid #fff;
     position: absolute;
-    transition: all 2s;
+    transition: all 0.5s;
 }
 
-.block-blue__content {
+.block__item--yellow {
     background-color: #FFBF47;
     right: 0;
     bottom: 0;
 }
 
-.block-blue__content::before {
+.block__item--yellow::before {
     background-color: #8ED78F;
     right: 250px;
     bottom: 250px;
 }
 
-.main__block:hover .block-blue__content::before {
+.block__item--yellow:hover::before {
     background-color: #DC91D8;
     border-radius: 400px;
     right: 0;
 }
 
-.main__block-yellow {
+.block--yellow {
     background-color: #FFBF47;
 }
 
-.block-yellow__content {
+.block__item--blue {
     background-color: #3BBCE3;
     left: 0;
     bottom: 0;
 }
 
-.block-yellow__content::before {
+.block__item--blue::before {
     background-color: #DC91D8;
     border-radius: 400px;
     left: 250px;
     bottom: 250px;
 }
 
-.main__block:hover .block-yellow__content::before {
+.block__item--blue:hover::before {
     background-color: #8ED78F;
     border-radius: 0;
     bottom: 0;
 }
 
-.main__block-purple {
+.block--purple {
     background-color: #DC91D8;
 }
 
-.block-purple__content {
+.block__item--green {
     background-color: #8ED78F;
     right: 0;
     top: 0;
 }
 
-.block-purple__content::before {
+.block__item--green::before {
     width: 200px;
     height: 200px;
     background-color: #3BBCE3;
@@ -125,26 +127,30 @@ html {
     transform: rotate(45deg);
 }
 
-.main__block:hover .block-purple__content::before {
+.block__item--green:hover::before {
     background-color: #FFBF47;
     transform: rotate(0deg);
     /* или вот так transform: rotate(90deg); */
 }
 
-.main__block-green {
+.block--green {
     background-color: #8ED78F;
 }
 
-.block-green__content {
+.block__item--purple {
     background-color: #DC91D8;
     left: 0;
     top: 0;
 }
 
-.block-green__content::before {
+.block__item--purple::before,
+.block__item--purple::after {
     width: 0;
     height: 0;
     border-style: solid;
+}
+
+.block__item--purple::before {
     border-width: 0 0 150px 150px;
     border-color: transparent transparent #FFBF47 transparent;
     right: -220px;
@@ -152,26 +158,23 @@ html {
     z-index: 3;
 }
 
-.block-green__content::after {
+.block__item--purple::after {
     content: "";
     position: absolute; 
     transition: all 2s;
-    width: 0;
-    height: 0;
-    border-style: solid;
     border-width: 0 0 250px 250px;
     border-color: transparent transparent #fff transparent;
     left: 250px;
     top: 250px;
 }
 
-.main__block:hover .block-green__content::before {
+.block__item--purple:hover::before {
     border-color: transparent transparent transparent #3BBCE3;
     right: -180px;
     bottom: -180px;
 }
 
-.main__block:hover .block-green__content::after {
+.block__item--purple:hover::after {
     border-color: transparent transparent transparent #fff;
 }
 
