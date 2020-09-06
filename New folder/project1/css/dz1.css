@@ -1,0 +1,21 @@
+h1{
+    font-size: 60px;
+}
+div{
+    font-weight: 700;
+ 
+    font-size: 24px;
+    font-style: italic;
+}
+.center{
+    display: block;
+    margin: 0 auto;
+}
+.teleg{
+    display: block;
+
+
+}
+h1,h3,div,.teleg{
+    text-align: center;
+}
