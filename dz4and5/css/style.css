@@ -117,14 +117,14 @@ a {
 
 .slider__block {
     max-width: 415px;
-    padding: 24px 18px;
+    padding: 21px 22px;
     background-color: rgba(232,102,60,.8);
     font-size: 18px;
     color: #fff;
-
+    
     position: absolute;
-    left: 37px;
-    bottom: 35px;
+    left: 34px;
+    bottom: 31px;
 }
 
 .slider__info {
