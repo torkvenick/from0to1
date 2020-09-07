@@ -1,0 +1,137 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'HelveticaNeueCyr-Light', sans-serif;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 1530px;
+}
+
+.header__inner {
+    background-color: #F5F5F5;
+    margin: 0 auto;
+    width: 1370px;
+    min-height: 900px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    /* align-content: space-around; */
+}
+
+.header__item {
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__item-top {
+    margin-left: 80px;
+}
+
+.header__item-middle {
+    align-self: center;
+}
+
+.header__item-bottom {
+    align-self: flex-end;
+    margin-right: 80px;
+}
+
+.item-block__btn {
+    font-weight: 550;
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 17px;
+}
+
+.item-block__btn:focus {
+    outline-color: #F9F9F9;
+    border-radius: 1px;
+    box-shadow: 0px 0px 0px 4px rgba(0,0,0,0.15);
+}
+
+.item-block__btn:hover {
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
+}
+
+.item-block__btn:active {
+    box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.15)
+}
+
+.item-block__big {
+    width: 140px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 14px;
+    border-radius: 3px;
+    padding-top: 14px;
+}
+
+.item-block__medium {
+    width: 110px;
+    height: 32px;
+    padding-top: 11px;
+    font-size: 12px;
+    line-height: 12px;
+    border-radius: 2px;
+    /* margin: 17px 0; пример раскидать блоки по вертикали */
+}
+
+.item-block__small {
+    width: 80px;
+    height: 24px;
+    padding-top: 8px;
+    font-size: 10px;
+    line-height: 10px;
+    border-radius: 2px;
+}
+
+.item-middle__center {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.item-bottom__end {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.item-block__blue {
+    background-color: #00A9FF;
+}
+
+.item-block__green {
+    background-color: #6BD82E;
+}
+
+.item-block__orange {
+    background-color: #FF9A00;
+}
+
+.item-block__red {
+    background-color: #FF4345;
+}
+
+.item-block__white {
+    border: 1px solid #D2CECE;
+    background-color: #fff;
+    color: #000;
+}
+
+.item-block__grey {
+    border: 1px solid #D2CECE;
+    background-color: #F9F9F9;
+    color: #9B9B9B;
+}
