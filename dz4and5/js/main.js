@@ -2,7 +2,6 @@ $(function(){
 
 
   $('.slider__inner').slick({
-    /* arrows: true, */
     asNavFor: '.thumbs'
   });
 

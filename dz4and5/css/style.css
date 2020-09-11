@@ -3,7 +3,7 @@
     src: url(../fonts/Bebas.woff2) format('woff2'),
          url(../fonts/Bebas.woff) format('woff'),
          url(../fonts/Bebas.ttf) format('truetype');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
@@ -20,9 +20,9 @@
 
 @font-face {
     font-family: 'HelveticaNeue';
-    src: url(../fonts/HelveticaNeue-Light.woff2) format('woff2'),
-         url(../fonts/HelveticaNeue-Light.woff) format('woff'),
-         url(../fonts/HelveticaNeue-Light.ttf) format('truetype');
+    src: url(../fonts/HelveticaNeue.woff2) format('woff2'),
+         url(../fonts/HelveticaNeue.woff) format('woff'),
+         url(../fonts/HelveticaNeue.ttf) format('truetype');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -41,7 +41,8 @@ html {
 body {
     font-family: 'Bebas', sans-serif;
     font-size: 16px;
-    background-color: #fbfbfb; /* фон задаем сюда. это хорошая практика */
+    font-weight: 400;
+    background-color: #fff; /* фон задаем сюда. это хорошая практика */
 }
 
 a {
@@ -83,7 +84,6 @@ a {
 
 .menu__item {
     display: inline-block;
-    text-transform: uppercase;
 }
 
 .menu__item+.menu__item {
@@ -101,6 +101,10 @@ a {
 }
 
 /* SLIDER */
+
+.slider {
+    margin-bottom: 40px;
+}
 
 .slider__inner {
     margin-bottom: 18px;
@@ -184,5 +188,137 @@ a {
     content: url('../images/arrow-next.svg');
 }
 
-
 /* SLIDER */
+
+/* ITEMS */
+
+.items {
+    margin-bottom: 45px;
+}
+
+.items__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    max-width: 280px;
+}
+
+.item__title {
+    font-size: 18px;
+    line-height: 24px;
+    color: #e8663c;
+    padding-left: 72px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.item__title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+}
+
+.item__title-icon::before {
+    width: 46px;
+    height: 46px;
+    background-image: url(../images/items/item-1.svg);  
+}
+
+.item__title-check::before {
+    width: 49px;
+    height: 41px;
+    background-image: url(../images/items/item-2.svg);
+}
+
+.item__title-user::before {
+    width: 41px;
+    height: 40px;
+    background-image: url(../images/items/item-3.svg);
+}
+
+.item__text {
+    padding-bottom: 20px;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: 'HelveticaNeue', sans-serif;
+    font-weight: 400;
+    color: #414141;
+}
+
+.item__link {
+    font-size: 12px;
+    line-height: 24px;
+    width: 55px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #e8663c;
+    text-align: center;
+}
+
+.item__link a {
+    color: #fff;
+}
+
+/* ITEMS */
+
+/* RECENT WORKS */
+
+.works {
+    margin-bottom: 50px;
+}
+
+.works__title {
+    display: flex;
+    justify-content: space-between;
+    color: #e8603c;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.works__title::after {
+    content: '';
+    background-image: url(../images/background.png);
+    background-repeat: repeat;
+    width: 805px;
+    height: 19px;
+}
+
+.works__links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.works__link {
+    display: flex;
+    flex-direction: column;
+}
+
+.works__link-title {
+    padding: 13px 0 8px;
+    max-width: 220px;
+    border-right: 1px solid #dbdbdb;
+    border-left: 1px solid #dbdbdb;
+}
+
+.works__link-date {
+    border-right: 1px solid #dbdbdb;
+    border-left: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.works__link-title a {
+    line-height: 18px;
+    color: #b9b9b9;
+}
+
+.works__link-date a {
+    font-size: 11px;
+    line-height: 18px;
+    color: #e8663c;
+}
+
+
+
+/* RECENT WORKS */
