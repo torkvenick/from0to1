@@ -100,6 +100,7 @@ li {
     height: 0;
     overflow: hidden;
     opacity: 0;
+    z-index: 3;
 
 
     position: absolute;  /* здесь был display: none; */
@@ -156,7 +157,6 @@ li {
     overflow: visible;
     opacity: 1;
     transition: all .3s;
-    z-index: 6;
 }
 
 .header__drop-down.drop-down:hover > a {
@@ -164,6 +164,18 @@ li {
     border-top: 5px solid #2aacc8;
     background-color: #fff;
     transition: all .3s;
+}
+
+.header__menu-btn {
+    width: 30px;
+    display: none;
+}
+
+.header__menu-row {
+    width: 100%;
+    background-color: #000;
+    height: 4px;
+    margin-bottom: 4px;
 }
 
     /* СЛАЙДЕР */

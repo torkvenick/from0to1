@@ -332,8 +332,11 @@ a {
     transform: scale(1.1);
 }
 
+.work__img {
+    display: block;
+}
+
 .work__text {
-    margin-top: -2px;
     border: 1px solid #dbdbdb;
     border-top: none;
     padding: 12px 0 10px 12px;
