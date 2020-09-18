@@ -83,5 +83,85 @@
     transform: rotate(180deg);
   }
 
+
+
+  .items__inner {
+    flex-wrap: wrap;
+  }
+
+  .item {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .clients-logo {
+    padding-left: 15px;
+  }
+
+  .download__btn {
+    padding-left: 15px;
+  }
+
 }
 
+@media (max-width: 900px){
+  .item {
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 780px){
+  .clients__inner {
+    flex-wrap: wrap;
+  }
+
+  .testimonials {
+    width: 100%;
+  }
+}
+
+@media (max-width: 670px){
+  .download {
+    flex-wrap: wrap;
+  }
+
+  .download__btn {
+    padding-left: 0;
+    margin: 30px auto 0;
+  }
+
+  .clients-logo__images img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 520px){
+  .item {
+    padding-right: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px){
+  .slider__item-title {
+    font-size: 40px;
+    line-height: 45px;
+    margin-left: 20px; 
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 960px){
+  .header__menu > ul {
+    display: block !important;
+  }
+}
