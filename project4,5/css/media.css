@@ -3,7 +3,7 @@
       display: block;
   }
 
-  .header__menu ul {
+  .header__menu > ul {
     display: none;
     position: absolute;
     z-index: 2;
@@ -47,16 +47,41 @@
     border-top: 1px solid #e7e7e7;
   }
 
-  .header__drop-down.drop-down {
-    
-  }
+  .header__drop-down.drop-down:hover .drop-down__list {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all .3s;
+  } 
 
   .drop-down__list {
-    height: auto;
-    overflow: visible;
-    opacity: 1;
+    position: static;
+    width: 100%;
+    height: 0;
+    border-bottom: none;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
     transition: all .3s;
-    display: none;
   }
+
+  .header__drop-down.drop-down .drop-down__list.active {
+    height: auto;
+    opacity: 1;
+    overflow: visible;
+    transition: all .3s;
+  }
+
+  .header__drop-down.drop-down:hover > a {
+    color: #000;
+    border-top: 1px solid #e7e7e7;
+    background-color: #fff;
+    transition: all 0s;
+  }
+
+  .header__drop-down > a.active::after {
+    transform: rotate(180deg);
+  }
+
 }
 
