@@ -108,6 +108,17 @@
   .item {
     padding-right: 15px;
   }
+  .footer__inner {
+    flex-wrap: wrap;
+  }
+  
+  .footer__item-social {
+    width: 60%;
+    margin-top: 20px;
+  }
+  .footer__copy {
+    padding-right: 15px;
+  }
 }
 
 @media (max-width: 780px){
@@ -117,6 +128,13 @@
 
   .testimonials {
     width: 100%;
+  }
+}
+
+@media (max-width: 720px){
+  .footer__item-content {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 
@@ -133,12 +151,23 @@
   .clients-logo__images img {
     max-width: 100%;
   }
+
+  .footer__item-social {
+    width: 100%;
+  }
 }
 
 @media (max-width: 520px){
   .item {
     padding-right: 0;
     width: 100%;
+  }
+}
+
+@media (max-width: 440px){
+  .footer__item-contact {
+    width: 100%;
+    margin-top: 20px;
   }
 }
 
@@ -149,6 +178,20 @@
     margin-left: 20px; 
   }
 
+  .footer__copy {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .footer__bottom {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 360px){
+  ul.footer__social li {
+    width: 33.333%;
+  }
 }
 
 
@@ -159,7 +202,7 @@
 
 
 
-
+/* Убрать баг с показом меню, которое исчезает, если блок шириной меньше 960 растягивать до ширины больше 960. Бургер пропадает, но и меню не появляется из-за display: none; */
 @media (min-width: 960px){
   .header__menu > ul {
     display: block !important;

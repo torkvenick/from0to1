@@ -59,7 +59,7 @@ a {
 .header__inner {
     display: flex;
     justify-content: space-between;
-    min-height: 78px; /* чтобы контент не растягивал */
+    min-height: 78px; /* чтобы контент не растягивался */
     align-items: center;
 }
 
@@ -90,6 +90,19 @@ a {
 .menu__link--active,
 .menu__link:hover {
     color: #e8663c;
+}
+
+/* Бургер меню */
+.header__menu-btn {
+   display: none;
+    width: 30px;
+}
+
+.header__menu-row {
+    width: 100%;
+    height: 4px;
+    margin-bottom: 4px;
+    background-color: #000;
 }
 
 /* SLIDER */
@@ -167,6 +180,10 @@ a {
     max-width: 140px;
 }
 
+.thumbs .slick-track {
+    transform: translate3d(0px, 0px, 0px) !important;
+}
+
 .slick-prev::before,
 .slick-next::before {
     width: 37px;
@@ -211,7 +228,7 @@ a {
     max-width: 280px;
 }
 
-.item+.item {
+.item + .item {
     margin-left: 39px;
 }
 

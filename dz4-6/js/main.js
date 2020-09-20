@@ -8,9 +8,16 @@ $(function(){
   $('.thumbs').slick({
     arrows: false,
     slidesToShow: 6,
-    slidesToScroll: 6,
+    slidesToScroll: 1,
     asNavFor: '.slider__inner',
-    focusOnSelect: true
+    focusOnSelect: true, 
+  });
+
+ 
+
+
+  $('.header__menu-btn').on('click', function(){
+    $('.menu').slideToggle();
   });
  
 
