@@ -13,8 +13,6 @@ $(function(){
     focusOnSelect: true, 
   });
 
- 
-
 
   $('.header__menu-btn').on('click', function(){
     $('.menu').slideToggle();

@@ -232,7 +232,7 @@ a {
     margin-left: 39px;
 }
 
-.item__title {
+.item__title {     
     font-size: 18px;
     line-height: 24px;
     color: #e8663c;
@@ -320,7 +320,7 @@ a {
     white-space: nowrap;
     color: #e8603c;
     font-size: 18px;
-    margin-bottom: 23px;
+    margin-bottom: 23px;    
 }
 
 .works__title::after {

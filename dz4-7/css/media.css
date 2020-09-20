@@ -64,7 +64,6 @@
   }
 }
 
-
 @media (max-width: 548px) {
   .header__menu-btn {
     display: block;
@@ -100,6 +99,10 @@
     display: block;
     text-transform: none;
   }  
+
+  .footer__item--widget {
+    max-width: 264px;
+  }
 
   .footer__item--contact {
     margin-right: 20px;
