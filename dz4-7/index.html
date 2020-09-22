@@ -22,11 +22,14 @@
         </a>
 
         <nav class="header__menu">
-          <div class="header__menu-btn">
-            <div class="header__menu-row"></div>
-            <div class="header__menu-row"></div>
-            <div class="header__menu-row"></div>
-          </div>
+
+          <!-- Это кнопка, а не див. Все, что подразумевается как кнопка, ДОЛЖНО быть кнопкой. Внутренность бургер меню лучше быть span а не div, так как спан используется для незначимых элементов -->
+          <button class="header__menu-btn">
+            <span class="header__menu-row"></span>
+            <span class="header__menu-row"></span>
+            <span class="header__menu-row"></span>
+          </button>
+
           <ul class="menu">
             <li class="menu__item">
               <a class="menu__link menu__link--active" href="#">
@@ -230,7 +233,8 @@
               </a>
               <div class="work__text">
                 <a class="work__title" href="#">character design</a>
-                <time class="work__time" href="#">june 15, 2012</time>
+                <time class="work__time">june 15, 2012</time>
+                <!-- тегу time не нужен атрибут -->
               </div>
             </article>
 
@@ -240,7 +244,7 @@
               </a>
               <div class="work__text">
                 <a class="work__title" href="#">brochure design</a>
-                <time class="work__time" href="#">june 15, 2012</time>
+                <time class="work__time">june 15, 2012</time>
               </div>
             </article>
 
@@ -250,7 +254,7 @@
               </a>
               <div class="work__text">
                 <a class="work__title" href="#">Social Media Buttons</a>
-                <time class="work__time" href="#">june 15, 2012</time>
+                <time class="work__time">june 15, 2012</time>
               </div>
             </article>
 
@@ -260,7 +264,7 @@
               </a>
               <div class="work__text">
                 <a class="work__title" href="#">10 Amazing Websites</a>
-                <time class="work__time" href="#">june 15, 2012</time>
+                <time class="work__time">june 15, 2012</time>
               </div>
             </article>
 

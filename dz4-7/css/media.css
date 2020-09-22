@@ -67,6 +67,10 @@
 @media (max-width: 548px) {
   .header__menu-btn {
     display: block;
+    border: none;
+    outline-style: none;
+    padding: 0;
+    background-color: transparent;
     margin-top: 7px;
   }
 

@@ -100,6 +100,7 @@ a {
 
 .header__menu-row {
     width: 100%;
+    display: block;
     height: 4px;
     margin-bottom: 4px;
     background-color: #000;
